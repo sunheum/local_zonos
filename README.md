@@ -1,3 +1,22 @@
+# 로컬 설치 과정 (windows)
+- 추가 모델 로컬 설치
+     - https://huggingface.co/descript/dac_44khz/tree/main
+     - https://huggingface.co/Zyphra/Zonos-v0.1-speaker-embedding/tree/main
+     - https://huggingface.co/Zyphra/Zonos-v0.1-transformer/tree/main
+          - hybrid 모델 사용시 별도 설치 필요
+- 드라이버 버전 업그레이드
+     - https://www.nvidia.com/en-us/drivers/details/242175/
+- CUDA / 드라이버 호환 버전 확인
+     - https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#cuda-major-component-versions
+- CUDA 12.4 설치
+- espeak 설치, 환경변수 설정
+- visual studio 설치, cl.exe 환경변수 path 추가
+- (코드수정) 모델 로컬 경로 설정
+- (코드수정) cfg_scale Tensor 해제
+- triton 설치
+     - pip install --upgrade setuptools wheel pip cmake ninja
+     - pip install -U triton-windows
+
 # Zonos-v0.1
 
 <div align="center">
